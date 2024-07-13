@@ -14,5 +14,5 @@ public interface OmdbClient {
     OmdbResponse searchMovies(@RequestParam("s") String title, @RequestParam("apikey") String apiKey);
     
     @GetMapping("/")
-    MovieDTO getMovie(@RequestParam("t") String title, @RequestParam("apikey") String apiKey);
+    MovieDTO getMovie(@RequestParam("i") String id, @RequestParam("apikey") String apiKey);
 }

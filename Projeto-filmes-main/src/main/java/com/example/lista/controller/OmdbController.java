@@ -29,8 +29,8 @@ public class OmdbController {
     }
     
     @GetMapping("/movie")
-    public MovieDTO gMovieDTO(@RequestParam String title){
-        return service.getMovie(title);
+    public MovieDTO gMovieDTO(@RequestParam String id){
+        return service.getMovie(id);
     }
 
    
